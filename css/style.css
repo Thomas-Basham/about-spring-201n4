@@ -68,9 +68,19 @@ footer {
   padding-block: 32px;
   padding-inline: 100px;
   font-size: 18px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 #interests-section p {
   border: 1px solid #e29578ff;
   border-radius: 5px;
 }
+
+#interests-section p:hover {
+  background-color: #e29578ff;
+  color: azure;
+  cursor:default;
+
+  
+}
+
