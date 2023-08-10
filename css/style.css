@@ -1,0 +1,76 @@
+* {
+  /* border: .3px solid magenta ; */
+  --caribbean-current: #006d77ff;
+  --tiffany-blue: #83c5beff;
+  --alice-blue: #edf6f9ff;
+  --pale-dogwood: #ffddd2ff;
+  --atomic-tangerine: #e29578ff;
+}
+
+body {
+  margin: 0;
+  background-color: #edf6f9ff;
+}
+
+header {
+  width: 100vw;
+  background-image: url('../img/books.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header div {
+  text-align: center;
+  padding-block: 70px;
+}
+
+h1 {
+  font-size: 48px;
+  color: azure;
+  -webkit-text-stroke: .8px black;
+}
+
+h2 {
+  font-size: 36px;
+  color: azure;
+  -webkit-text-stroke: .8px black;
+}
+
+strong {
+  display: inline-block;
+  margin-right: 48px;
+  width: 120px;
+  color: #edf6f9ff;
+  background-color:#006d77ff;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  padding-block: 30px;
+  color: #83c5beff;
+}
+
+#about-section {
+  text-align: center;
+  margin: 42px auto;
+  width: 640px;
+  
+  color: #006d77ff;
+}
+
+#interests-section {
+  margin: 0 auto;
+  width: 780px;
+  border: 1px solid #006d77ff;
+  padding-block: 32px;
+  padding-inline: 100px;
+  font-size: 18px;
+}
+
+#interests-section p {
+  border: 1px solid #e29578ff;
+  border-radius: 5px;
+}
