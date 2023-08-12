@@ -12,17 +12,23 @@ body {
   background-color: #edf6f9ff;
 }
 
+main {
+  min-height: 150vh;
+}
+
 header {
   width: 100vw;
   background-image: url('../img/books.jpg');
   background-size: cover;
   background-attachment: fixed;
   font-family: Arial, Helvetica, sans-serif;
+  position: sticky;
+  top: 0px;
 }
 
 header div {
   text-align: center;
-  padding-block: 70px;
+  /* padding-block: 70px; */
 }
 
 h1 {
@@ -51,6 +57,27 @@ footer {
   text-align: center;
   padding-block: 30px;
   color: #83c5beff;
+  position: sticky;
+  bottom: 0;
+}
+
+.position-absolute{
+  position: absolute;
+}
+
+.apple{
+  top: 320px;
+  left: 30px;
+  font-size: 60px;
+}
+
+.position-relative{
+  position: relative;
+}
+
+.banana {
+  font-size: 60px;
+  left: 800px;
 }
 
 #about-section {
