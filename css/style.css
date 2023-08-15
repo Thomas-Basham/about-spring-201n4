@@ -48,7 +48,7 @@ strong {
   margin-right: 48px;
   width: 120px;
   color: #edf6f9ff;
-  background-color:#006d77ff;
+  background-color: #006d77ff;
   padding: 5px;
   border-radius: 5px;
 }
@@ -61,17 +61,17 @@ footer {
   bottom: 0;
 }
 
-.position-absolute{
+.position-absolute {
   position: absolute;
 }
 
-.apple{
+.apple {
   top: 320px;
   left: 30px;
   font-size: 60px;
 }
 
-.position-relative{
+.position-relative {
   position: relative;
 }
 
@@ -84,7 +84,7 @@ footer {
   text-align: center;
   margin: 42px auto;
   width: 640px;
-  
+
   color: #006d77ff;
 }
 
@@ -106,8 +106,5 @@ footer {
 #interests-section p:hover {
   background-color: #e29578ff;
   color: azure;
-  cursor:default;
-
-  
+  cursor: default;
 }
-

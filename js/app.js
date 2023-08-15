@@ -1,46 +1,47 @@
 "use strict";
+let userScore = 0;
+
+function yesOrNoPrompt(
+  question,
+  correctAnswer,
+  successMessage,
+  failureMessage
+) {
+  let questionPrompt = prompt(question).toLocaleLowerCase();
+  if (questionPrompt === correctAnswer) {
+    alert(successMessage);
+    userScore++;
+  } else {
+    alert(failureMessage);
+  }
+}
 
 let playGame = confirm("Do you want to play a game?");
 
 if (playGame) {
-  let userScore = 0;
-
   let username = prompt("What is your name?");
   console.log("User's name", username);
-  let thomasFishing = prompt("Does Thomas like fishing?").toLowerCase();
 
-  if (thomasFishing === "y" || thomasFishing === "yes") {
-    alert("That's correct. Thomas loves fishing!");
-    userScore++;
-    console.log("userScore: ", userScore);
-  } else {
-    alert("That's wrong. Fishing is life.");
-  }
+  yesOrNoPrompt(
+    "Does Thomas like fishing?",
+    "yes",
+    "That's correct. Thomas loves fishing!",
+    "That's wrong. Fishing is life."
+  );
 
-  let ariArt = prompt("Does Ari like art?");
-  ariArt = ariArt.toUpperCase(); // yes -->>> YES
+  yesOrNoPrompt(
+    "Does Ari like art?",
+    "yes",
+    "Yes! Ari is an artist.",
+    "Wrong! Ari is in fact an artist."
+  );
 
-  if (ariArt === "Y" || ariArt === "YES") {
-    // console.log("ariArt: ", ariArt);
-    alert("Yes! Ari is an artist.");
-    userScore++;
-    console.log("userScore: ", userScore);
-  } else {
-    // console.log("ariArt: ", ariArt);
-    alert("Wrong! Ari is in fact an artist.");
-  }
-
-  let khariCars = prompt("Does Khari like cars?").toLowerCase();
-
-  if (khariCars === "y" || khariCars === "yes") {
-    console.log("khariCars: ", khariCars);
-    alert("Yep, Kharis a car guy.");
-    userScore++;
-    console.log("userScore: ", userScore);
-  } else {
-    console.log("khariCars: ", khariCars);
-    alert("That's wrong, Khari likes cars.");
-  }
+  yesOrNoPrompt(
+    "Does Khari like trucks?",
+    "no",
+    "That's right, Khari likes cars more.",
+    "Thats wrong, Khari likes cars"
+  );
 
   let correctAnswer = 7;
   let userGuess;
