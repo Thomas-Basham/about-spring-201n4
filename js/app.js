@@ -43,6 +43,14 @@ if (playGame) {
     "Thats wrong, Khari likes cars"
   );
 
+  guessANumber();
+
+  guessAnInterest();
+
+  alert("Great job! Your score is " + userScore);
+}
+
+function guessANumber() {
   let correctAnswer = 7;
   let userGuess;
 
@@ -59,7 +67,9 @@ if (playGame) {
       userScore++;
     }
   }
+}
 
+function guessAnInterest() {
   let interestsArray = [
     "art",
     "cars",
@@ -74,7 +84,7 @@ if (playGame) {
 
   hasAttempts: while (attempts !== 0) {
     attempts--;
-    userGuess = prompt("Can you guess one of our class's interests?");
+    let userGuess = prompt("Can you guess one of our class's interests?");
 
     for (let i = 0; i < interestsArray.length; i++) {
       if (userGuess === interestsArray[i]) {
@@ -92,6 +102,4 @@ if (playGame) {
       );
     }
   }
-
-  alert("Great job! Your score is " + userScore);
 }
