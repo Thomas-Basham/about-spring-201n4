@@ -14,7 +14,7 @@ A webpage about the interests of our class spring-c-201n4
 
 ### Lighthouse Accessibility Report Score
 
-![Lighthouse Score](img/lighthouse-score.png)
+![Lighthouse Score](img/light-house-score.png)
 
 ### Reflections and Comments
 
